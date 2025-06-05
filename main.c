@@ -73,9 +73,9 @@ int main(void) {
         #pragma omp single
         {
 
-            // grainsize(100)
+            // grainsize(500)
             // Ajusta a granulação
-            // Cada tarefa processa pelo menos 100 iterações, mas menos que o dobro disso.
+            // Cada tarefa processa pelo menos 500 iterações, mas menos que o dobro disso.
 
             // Tarefa de Redução Utilizando Taskloop Reduction
             #pragma omp taskloop reduction(+:output_task)
